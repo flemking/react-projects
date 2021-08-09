@@ -67,15 +67,8 @@ function App() {
           justifyContent: "space-evenly",
         }}
       >
-        <div
-          style={{
-            position: "absolute",
-            top: 0,
-            right: 10,
-            paddingTop: 10,
-          }}
-        >
-          <span>{LightMode ? "Dark" : "Light"} Mode</span>
+        <div className="toggle">
+          <span className="text">{LightMode ? "Dark" : "Light"} Mode</span>
           <ToggleMode
             checked={LightMode}
             onChange={() => setLightMode(!LightMode)}

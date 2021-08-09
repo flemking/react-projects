@@ -1,13 +1,26 @@
 .App {
-    height:100vh;
-    background-color:#212121;
-    color:whitesmoke;
-    transition: all 0.5s linear;
+  height: 100vh;
+  background-color: #212121;
+  color: whitesmoke;
+  transition: all 0.5s linear;
 }
 
 .lightmode {
-    height:100vh;
-    background-color: whitesmoke;
-    color: #212121;
-    transition: all 0.5s linear;
+  height: 100vh;
+  background-color: whitesmoke;
+  color: #212121;
+  transition: all 0.5s linear;
+}
+
+.toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 10;
+}
+
+@media (max-width: 400px) {
+  .toggle .text {
+    display: none;
+  }
 }
