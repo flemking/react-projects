@@ -1,0 +1,13 @@
+.footer {
+    font-size: 1rem;
+    text-align: center;
+    padding: auto 1em ;
+    font-family: 'Nunito', sans-serif;
+}
+a {
+    color: rgb(103, 24, 194);
+    transition: all 0.5s ease-in-out;
+}
+a:hover {
+    color: rgb(192, 139, 253);
+}

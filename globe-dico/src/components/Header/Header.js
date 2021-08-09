@@ -12,13 +12,13 @@ import {
 import categories from "../../data/categories";
 import "./Header.css";
 
-const Header = ({ category, setCategory, word, setWord }) => {
+const Header = ({ category, setCategory, word, setWord, LightMode }) => {
   const darkTheme = createTheme({
     palette: {
       primary: {
-        main: "#fff",
+        main: LightMode ? "#212121" : "#fff",
       },
-      type: "dark",
+      type: LightMode ? "light" : "dark",
     },
   });
 
@@ -41,7 +41,7 @@ const Header = ({ category, setCategory, word, setWord }) => {
 
   return (
     <div className="header">
-      <span className="title">{word ? word : "Global Dico"}</span>
+      <span className="title">{word ? word : "Globe Dico"}</span>
       <div className="inputs">
         <ThemeProvider theme={darkTheme}>
           <TextField
